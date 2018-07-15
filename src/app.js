@@ -24,17 +24,4 @@ const jsx = (
   </Provider>
 );
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 4500 }));
-store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
-// store.dispatch(setTextFilter('water'));
-// store.dispatch(setStartDate(-1001));
-// store.dispatch(setEndDate(5000));
-
-// setTimeout(() => {
-//   store.dispatch(addExpense({ description: 'Water Bill', amount: 4500 }));
-//   store.dispatch(addExpense({ description: 'Gas Bill', createdAt: 1000 }));
-//   store.dispatch(addExpense({ description: 'Rent', amount: 109500 }));
-// }, 3000);
-
 ReactDOM.render(jsx, document.getElementById('app'));
