@@ -8,7 +8,10 @@ import configureStore from './store/configureStore';
 // import getVisibleExpenses from './selectors/expenses';
 // import { addExpense } from './actions/expenses';
 // import { setTextFilter, setStartDate, setEndDate } from './actions/filters';
+
 import './styles/styles.scss';
+import './firebase/firebase';
+// import './playground/promises';
 
 const store = configureStore();
 

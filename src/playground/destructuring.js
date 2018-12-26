@@ -25,7 +25,7 @@
 // }
 
 // const book = {
-//   titile: 'Ego is the Enemy',
+//   title: 'Ego is the Enemy',
 //   author: 'Ryan Holiday',
 //   publisher: {
 //     name: 'Penguin'

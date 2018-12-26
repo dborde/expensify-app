@@ -38,6 +38,7 @@
     "react/prefer-stateless-function": 2,
     "react/no-direct-mutation-state": 0,
     "react/sort-comp": 0,
+    "global-require": 0,
     "jsx-a11y/no-autofocus": 0,
     "jsx-a11y/anchor-is-valid": [ 0 , {
       "components": [ "Link" ]
