@@ -36,6 +36,7 @@
     "import/prefer-default-export": 0,
     "import/no-named-as-default": 0,
     "no-shadow": 1,
+    "prefer-destructuring": 1,
     "react/display-name": 1,
     "react/no-unescaped-entities": 1,
     "react/prefer-stateless-function": 2,
