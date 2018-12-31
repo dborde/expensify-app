@@ -40,7 +40,6 @@ test('should set note on textarea change', () => {
     target: { value }
   });
   expect(wrapper.state('note')).toBe(value);
-  expect(wrapper).toMatchSnapshot();
 });
 
 test('should set amount if valid input', () => {
@@ -50,7 +49,6 @@ test('should set amount if valid input', () => {
     target: { value }
   });
   expect(wrapper.state('amount')).toBe(value);
-  expect(wrapper).toMatchSnapshot();
 });
 
 test('should not set amount if invalid input', () => {
