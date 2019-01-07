@@ -31,6 +31,17 @@ test('should handle startEditExpense', () => {
 
 test('should handle startRemoveExpense', () => {
   wrapper.find('button').simulate('click');
+  expect(wrapper.state('isModalOpen')).toBe(true);
+});
+
+test('should handle onRemove', () => {
+  wrapper.find('RemoveExpenseModal').prop('onRemove')();
+  expect(wrapper.state('isModalOpen')).toBe(false);
   expect(history.push).toHaveBeenLastCalledWith('/');
   expect(startRemoveExpense).toHaveBeenLastCalledWith({ id: expenses[1].id });
 });
+
+// test('should handle onToggleModal', () => {
+//   wrapper.find('RemoveExpenseModal').prop('onToggleModal')();
+//   expect(wrapper.state('isModalOpen')).toBe(true);
+// });
