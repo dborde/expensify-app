@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 
 if (process.env.NODE_ENV !== 'test') Modal.setAppElement('#app');
 
-const OptionModal = (props) => (
+const RemoveExpenseModal = (props) => (
   <Modal
     isOpen={props.isModalOpen}
     onRequestClose={props.onToggleModal}
@@ -17,4 +17,4 @@ const OptionModal = (props) => (
     <button className="button button--caution" onClick={props.onRemove}>I&apos;m sure</button>
   </Modal>
 );
-export default OptionModal;
+export default RemoveExpenseModal;

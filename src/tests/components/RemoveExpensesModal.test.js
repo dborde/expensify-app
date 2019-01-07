@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import OptionModal from '../../components/RemoveExpenseModal';
+import RemoveExpenseModal from '../../components/RemoveExpenseModal';
 import expenses from '../fixtures/expenses';
 
 let wrapper, isModalOpen, onRemove, onToggleModal, expense;
@@ -11,7 +11,7 @@ beforeEach(() => {
   onToggleModal = jest.fn();
   expense = expenses[0];
   wrapper = shallow(
-    <OptionModal
+    <RemoveExpenseModal
       expense={expense}
       isModalOpen={isModalOpen}
       onRemove={onRemove}
@@ -19,6 +19,6 @@ beforeEach(() => {
     />);
 });
 
-test('should render OptionModal correctly', () => {
+test('should render RemoveExpenseModal correctly', () => {
   expect(wrapper).toMatchSnapshot();
 });
